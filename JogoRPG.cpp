@@ -1,20 +1,21 @@
- //Ex1 (69-81)
-//Ex2 (32-34) main(117-119)
-//Ex3 (49-52)
-//extra (101)
-#include <iostream>
-#include <string>
-using namespace std;
-
-class Personagem {
-protected: // Encapsulamento: Protegido permite acesso às classes filhas
-    string nome;
-    int vida;
-    int vidaMaxima;
-
-public:
-    // Construtor
-    Personagem(string n, int v) : nome(n), vida(v), vidaMaxima(v) {}
+  //Ex1 (69-81)
+  //Ex2 (32-34) main(117-119)
+  //Ex3 (49-52)
+  //extra (101)
+  
+  #include <iostream>
+  #include <string>
+  using namespace std;
+  
+  class Personagem {
+  protected: // Encapsulamento: Protegido permite acesso às classes filhas
+      string nome;
+      int vida;
+      int vidaMaxima;
+  
+  public:
+      // Construtor
+      Personagem(string n, int v) : nome(n), vida(v), vidaMaxima(v) {}
 
     // Getters (Encapsulamento: Leitura segura)
     string getNome() const { return nome; }
